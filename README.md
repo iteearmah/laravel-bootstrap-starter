@@ -2,6 +2,9 @@
 
 Laravel Bootstrap Starter is a powerful framework combining Laravel and Bootstrap. It offers pre-built components, styles, and features for rapid web application development. With authentication, database integration, and more included, developers can focus on custom logic while maintaining clean code.
 
+![screencapture-laravel-bootstrap-starter-test-dashboard-2023-07-07-13_54_05](https://github.com/iteearmah/laravel-bootstrap-starter/assets/13051277/d4e7da72-4634-42f9-93dd-ae0334f4860a)
+
+
 ## Features
 
 - Laravel 10
