@@ -1,0 +1,24 @@
+.show-view{
+    dt{
+        font-weight: bold;
+    }
+    dd{
+        margin-left: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+}
+.navbar-expand-md .navbar-nav .nav-link.active {
+    // bottom border primary color
+    border-bottom: 2px solid #007bff;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
