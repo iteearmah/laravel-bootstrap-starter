@@ -46,17 +46,21 @@ class SetupSeeder extends Seeder
         ]);
 
         $superAdminRole = Role::query()->firstOrCreate([
-            'name' => User::ROLE_SUPER_ADMIN
+            'name' => User::ROLE_SUPER_ADMIN,
+            'team_id' => $team->id,
         ]);
 
         $adminRole = Role::query()->firstOrCreate([
-            'name' => User::ROLE_ADMIN
+            'name' => User::ROLE_ADMIN,
+            'team_id' => $team->id,
         ]);
         $editorRole = Role::query()->firstOrCreate([
-            'name' => User::ROLE_EDITOR
+            'name' => User::ROLE_EDITOR,
+            'team_id' => $team->id,
         ]);
         $userRole = Role::query()->firstOrCreate([
-            'name' => User::ROLE_USER
+            'name' => User::ROLE_USER,
+            'team_id' => $team->id,
         ]);
 
         $superAdminRole->givePermissionTo(Permission::all());
@@ -85,7 +89,7 @@ class SetupSeeder extends Seeder
         if ($team) {
             setPermissionsTeamId($team->id);
             $superAdminUser->assignRole([User::ROLE_SUPER_ADMIN]);
-            $superAdminUser->teamUsers()->attach($superAdminUser->id, ['team_id' => $team->id]);
+            $superAdminUser->attachTeam($team);
         }
 
     }
