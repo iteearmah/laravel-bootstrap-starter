@@ -39,6 +39,16 @@ Laravel Bootstrap Starter is a powerful framework combining Laravel and Bootstra
 6. Run `php artisan db:seed`
 7. Run `php artisan serve`
 
+## Usage
+
+### Authentication
+
+Laravel Bootstrap Starter comes with authentication out of the box. You can register a new user or login with the default credentials.
+
+- Email: superadmin@admin.com
+- Password: password
+
+
 ## License
 
 Laravel Bootstrap Starter is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
