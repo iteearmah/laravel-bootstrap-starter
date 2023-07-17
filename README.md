@@ -4,6 +4,9 @@ Laravel Bootstrap Starter is a powerful framework combining Laravel and Bootstra
 
 ![screencapture-laravel-bootstrap-starter-test-dashboard-2023-07-07-13_54_05](https://github.com/iteearmah/laravel-bootstrap-starter/assets/13051277/d4e7da72-4634-42f9-93dd-ae0334f4860a)
 
+<img width="1440" alt="Screenshot 2023-07-17 at 4 06 42 pm" src="https://github.com/iteearmah/laravel-bootstrap-starter/assets/13051277/f13d4cf8-bfe0-41ea-8472-95574b6ecd2a">
+
+
 
 ## Features
 
