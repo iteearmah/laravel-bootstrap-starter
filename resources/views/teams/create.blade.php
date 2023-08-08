@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex flex-wrap justify-content-between align-content-center">
-                             <span class="d-flex align-items-center">{{ __('Add :team',['team' => config('team.team_label')] ) }}</span>
+                            <span class="d-flex align-items-center">{{ __('Add :team',['team' => config('team.team_label')] ) }}</span>
                             <div>
                                 <a href="{{ route('teams.index') }}" class="btn btn-sm btn-primary">
                                     <i class="bi bi-list"></i> {{ __('Back to list') }}
@@ -19,8 +19,10 @@
                         <form method="POST" action="{{ route('teams.store') }}" enctype="multipart/form-data">
                             @csrf
                             @include('teams.partials.form')
-                            <button class="btn btn-primary mt-3">{{__('Create')}}</button>
-                            <a href="{{ route('teams.index') }}" class="btn btn-secondary mt-3">{{__('Cancel')}}</a>
+                            <div class="float-end">
+                                <a href="{{ route('teams.index') }}" class="btn btn-secondary mt-3">{{__('Cancel')}}</a>
+                                <button class="btn btn-primary mt-3">{{__('Create')}}</button>
+                            </div>
                         </form>
                     </div>
                 </div>

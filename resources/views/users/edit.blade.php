@@ -21,8 +21,11 @@
                             @csrf
                             @method('PUT')
                             @include('users.partials.form')
-                            <button type="submit" class="btn btn-primary mt-3">{{ __('Update') }}</button>
-                            <a href="{{ route('users.index') }}" class="btn btn-secondary mt-3">{{ __('Cancel') }}</a>
+                            <div class="float-end">
+                                <a href="{{ route('users.index') }}"
+                                   class="btn btn-secondary mt-3">{{ __('Cancel') }}</a>
+                                <button type="submit" class="btn btn-primary mt-3">{{ __('Update') }}</button>
+                            </div>
                         </form>
                     </div>
                 </div>

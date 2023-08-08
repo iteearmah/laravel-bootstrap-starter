@@ -23,8 +23,10 @@
                             @csrf
                             @method('PUT')
                             @include('teams.partials.form')
-                            <button class="btn btn-primary mt-3">{{__('Update')}}</button>
+                            <div class="float-end">
                             <a href="{{ route('teams.index') }}" class="btn btn-secondary mt-3">{{__('Cancel')}}</a>
+                                <button class="btn btn-primary mt-3">{{__('Update')}}</button>
+                            </div>
                         </form>
                     </div>
                 </div>

@@ -19,8 +19,11 @@
                         <form action="{{ route('users.store') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             @include('users.partials.form')
-                            <button type="submit" class="btn btn-primary mt-3">{{ __('Create') }}</button>
-                            <a href="{{ route('users.index') }}" class="btn btn-secondary mt-3">{{ __('Cancel') }}</a>
+                            <div class="float-end">
+                                <a href="{{ route('users.index') }}"
+                                   class="btn btn-secondary mt-3">{{ __('Cancel') }}</a>
+                                <button type="submit" class="btn btn-primary mt-3">{{ __('Create') }}</button>
+                            </div>
                         </form>
                     </div>
                 </div>

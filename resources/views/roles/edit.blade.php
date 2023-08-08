@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex flex-wrap justify-content-between align-content-center">
-                             <span class="d-flex align-items-center">{{ __('Edit Role') }}</span>
+                            <span class="d-flex align-items-center">{{ __('Edit Role') }}</span>
                             <div>
                                 <a href="{{ route('roles.show', $role) }}" class="btn btn-sm btn-success">
                                     <i class="bi bi-eye"></i> {{ __('View') }}
@@ -21,10 +21,13 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('roles.update', $role) }}">
                             @csrf
-                        @method('PUT')
-                        @include('roles.partials.form')
-                       <button class="btn btn-primary mt-3">{{ __('Update') }}</button>
-                          <a href="{{ route('roles.index') }}" class="btn btn-secondary mt-3">{{ __('Cancel') }}</a>
+                            @method('PUT')
+                            @include('roles.partials.form')
+                            <div class="float-end">
+                                <a href="{{ route('roles.index') }}"
+                                   class="btn btn-secondary mt-3">{{ __('Cancel') }}</a>
+                                <button class="btn btn-primary mt-3">{{ __('Update') }}</button>
+                            </div>
                         </form>
                     </div>
                 </div>
