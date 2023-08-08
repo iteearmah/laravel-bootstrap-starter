@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex flex-wrap justify-content-between align-content-center">
-                            <span>{{ __('Edit :team',['team' => config('team.team_label')] ) }}</span>
+                             <span class="d-flex align-items-center">{{ __('Edit :team',['team' => config('team.team_label')] ) }}</span>
                             <div>
                                 <a href="{{ route('teams.show', $team) }}" class="btn btn-sm btn-success">
                                     <i class="bi bi-eye"></i> {{ __('View') }}

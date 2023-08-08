@@ -5,7 +5,7 @@
         <div class="card">
             <div class="card-header">
                 <div class="d-flex flex-wrap justify-content-between align-content-center">
-                    <span>{{ __('Activity Logs') }}</span>
+                     <span class="d-flex align-items-center">{{ __('Activity Logs') }}</span>
                 </div>
             </div>
             <div class="card-body">

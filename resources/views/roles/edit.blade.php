@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex flex-wrap justify-content-between align-content-center">
-                            <span>{{ __('Edit Role') }}</span>
+                             <span class="d-flex align-items-center">{{ __('Edit Role') }}</span>
                             <div>
                                 <a href="{{ route('roles.show', $role) }}" class="btn btn-sm btn-success">
                                     <i class="bi bi-eye"></i> {{ __('View') }}

@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex flex-wrap justify-content-between align-content-center">
-                            <span>{{ __('Add :team',['team' => config('team.team_label')] ) }}</span>
+                             <span class="d-flex align-items-center">{{ __('Add :team',['team' => config('team.team_label')] ) }}</span>
                             <div>
                                 <a href="{{ route('teams.index') }}" class="btn btn-sm btn-primary">
                                     <i class="bi bi-list"></i> {{ __('Back to list') }}

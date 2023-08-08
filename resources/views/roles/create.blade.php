@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex flex-wrap justify-content-between align-content-center">
-                            <span>{{ __('Add Role') }}</span>
+                             <span class="d-flex align-items-center">{{ __('Add Role') }}</span>
                             <div>
                                 <a href="{{ route('roles.index') }}" class="btn btn-sm btn-primary">
                                     <i class="bi bi-list"></i> {{ __('Back to list') }}

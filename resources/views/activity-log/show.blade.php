@@ -39,7 +39,7 @@
                 <div class="card mt-4">
                     <div class="card-header">
                         <div class="d-flex flex-wrap justify-content-between align-content-center">
-                            <span>{{ __('Properties') }}</span>
+                             <span class="d-flex align-items-center">{{ __('Properties') }}</span>
                         </div>
                     </div>
                     <div class="card-body">
