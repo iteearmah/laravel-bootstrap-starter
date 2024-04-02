@@ -13,7 +13,7 @@ use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
-class UsersDataTable extends DataTable
+class UsersDataTable extends BaseDataTable
 {
     /**
      * Build the DataTable class.
@@ -58,13 +58,10 @@ class UsersDataTable extends DataTable
      */
     public function html(): HtmlBuilder
     {
-        return $this->builder()
+        return parent::html()
                     ->setTableId('users-table')
                     ->columns($this->getColumns())
-                    ->minifiedAjax()
-                    //->dom('Bfrtip')
                     ->orderBy(0)
-                    ->selectStyleSingle()
                     ->buttons([
                         Button::make('print'),
                         Button::make('reset'),
