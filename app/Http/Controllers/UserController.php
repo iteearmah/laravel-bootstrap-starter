@@ -110,6 +110,9 @@ class UserController extends Controller
     {
         $roles = $request->get('roles', []);
         $permissions = $request->get('permissions', []);
+        //convert collection values to integers
+
+        $permissions = ($permissions) ? array_map('intval', $permissions) : [];
         $roles = Role::query()->find($roles);
 
         $user->syncPermissions($permissions);

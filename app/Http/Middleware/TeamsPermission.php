@@ -16,10 +16,13 @@ class TeamsPermission
      */
     public function handle(Request $request, Closure $next): Response
     {
+
         if(auth()->user() !== null){
             // session value set on login
+
             setPermissionsTeamId(session('team_id'));
         }
+
         // other custom ways to get team_id
         /*if(!empty(auth('api')->user())){
             // `getTeamIdFromToken()` example of custom method for getting the set team_id
